@@ -1,0 +1,54 @@
+/*Общая верстка*/
+*{
+}
+article{
+    font-size: 1.5em;
+    color: azure;
+    margin-top: 20px;
+    word-wrap: break-word;
+    box-shadow: 7px 7px 0 #243241;
+    padding: 10px 10px 10px 10px;
+    background-image: url("/1234567109.jpg");
+    background-size: cover;
+    border-radius: 10px;
+}
+article div{
+    display: inline;
+    text-decoration: none;
+    color: aquamarine;
+}
+article div:hover{
+    color: hsl(156,100%,50%);
+    text-shadow: aquamarine 0 0 60px;
+    transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
+}
+a{
+    text-decoration: none;
+    color: aquamarine;
+}
+article a:hover{
+    color: hsl(156,100%,50%);
+    text-shadow: aquamarine 0 0 60px;
+    transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
+}
+@media(min-width: 854px)/*Верстка под пк*/
+{
+    article{
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+@media(max-width: 854px)/*Верстка под мобилу*/
+{
+    article{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%; 
+        text-align: center;
+    }
+    a{
+        text-align: left;
+    }
+}
